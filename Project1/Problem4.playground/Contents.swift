@@ -22,6 +22,7 @@
     Function (Input is a String) {
         Initialize a constant representing the first index of "@"
         Initialize a constant representing the first index of "."
+        Initialize a constant representing the first index of " "
         If the following are true...
             1. The input contains a "@" and ".", but no spaces
             2. The input meets the minimum possible length (5)
