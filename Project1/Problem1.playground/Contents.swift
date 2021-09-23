@@ -6,7 +6,6 @@
 /*:
  - Example: `5` is a prime number because its only factors are `1` and `5`
  */
-isPrime(2)
 /*:
  - Example: `4` is a composite number because its factors (`1`, `2`, `4`) include `2`.
  */
