@@ -182,7 +182,25 @@ if let person3 = dictFull[3] {
 }
 
 //: ## Closures
+//: Sample form for writing a closure:
+let sayTheDate = { (date: String) -> String in
+    return "Today is \(date)."
+}
 
+//: Calling a closure:
+sayTheDate("September 30th") // "Today is September 30th"
+
+//: Passing a closure into a function:
+func notify(date: String, message: (String) -> String) {
+    message(date)
+}
+
+notify(date: "September 30th", message: sayTheDate) // "Today is September 30th"
+
+//: Trailing closure
+notify(date: "September 30th") { (date) -> String in
+    return "Another way to say \(date)" // "Today is September 30th"
+}
 
 // ## Guards
 //: Sample form for writing a guard in a function:
