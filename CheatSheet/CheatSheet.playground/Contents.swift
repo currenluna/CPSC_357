@@ -3,6 +3,16 @@ import Darwin
 
 //: # Curren's Cheat Sheet
 
+
+let names: [String?] = ["joe"]
+
+if let name: String = names[0] {
+    print("hello \(name)")
+}
+
+var number = [1, 2, 3]
+number += [3]
+
 //: ## Constants
 //: Declaring and assigning a constant:
 let myConstant: String = "Curren"
