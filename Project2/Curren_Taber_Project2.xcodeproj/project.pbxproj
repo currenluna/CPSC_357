@@ -27,6 +27,8 @@
 		179E720627220B440061BED4 /* AddNewRestaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E720427220B440061BED4 /* AddNewRestaurant.swift */; };
 		17DBA8C7272A547B00203B07 /* RestaurantAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* RestaurantAssets.xcassets */; };
 		17DBA8C8272A547B00203B07 /* RestaurantAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* RestaurantAssets.xcassets */; };
+		17DBA8CA272B34DD00203B07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C9272B34DD00203B07 /* README.md */; };
+		17DBA8CB272B34DD00203B07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C9272B34DD00203B07 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		179E72012722084F0061BED4 /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
 		179E720427220B440061BED4 /* AddNewRestaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewRestaurant.swift; sourceTree = "<group>"; };
 		17DBA8C6272A547B00203B07 /* RestaurantAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RestaurantAssets.xcassets; sourceTree = "<group>"; };
+		17DBA8C9272B34DD00203B07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,16 +78,17 @@
 		179E71D3272201200061BED4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				17DBA8C9272B34DD00203B07 /* README.md */,
 				179E71F5272201DD0061BED4 /* restaurantData.json */,
 				179E71D6272201220061BED4 /* Assets.xcassets */,
 				17DBA8C6272A547B00203B07 /* RestaurantAssets.xcassets */,
+				179E71D4272201200061BED4 /* CurrenTaberProject2App.swift */,
 				179E71F8272202030061BED4 /* Restaurant.swift */,
 				179E71FB272202DF0061BED4 /* RestaurantData.swift */,
 				179E71FE272204820061BED4 /* RestaurantStore.swift */,
-				179E71D4272201200061BED4 /* CurrenTaberProject2App.swift */,
 				179E71D5272201200061BED4 /* ContentView.swift */,
-				179E720427220B440061BED4 /* AddNewRestaurant.swift */,
 				179E72012722084F0061BED4 /* RestaurantDetail.swift */,
+				179E720427220B440061BED4 /* AddNewRestaurant.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 			files = (
 				179E71E8272201220061BED4 /* Assets.xcassets in Resources */,
 				17DBA8C7272A547B00203B07 /* RestaurantAssets.xcassets in Resources */,
+				17DBA8CA272B34DD00203B07 /* README.md in Resources */,
 				179E71F6272201DD0061BED4 /* restaurantData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			files = (
 				179E71E9272201220061BED4 /* Assets.xcassets in Resources */,
 				17DBA8C8272A547B00203B07 /* RestaurantAssets.xcassets in Resources */,
+				17DBA8CB272B34DD00203B07 /* README.md in Resources */,
 				179E71F7272201DD0061BED4 /* restaurantData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
