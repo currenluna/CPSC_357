@@ -45,6 +45,7 @@ struct RestaurantDetail: View {
                     Image(systemName: selectedRestaurant.isAllergyFriendly ? "checkmark.circle" : "xmark.circle")
                         .foregroundColor(color4)
                 }
+
             }
             
             //  Calls colorize function
