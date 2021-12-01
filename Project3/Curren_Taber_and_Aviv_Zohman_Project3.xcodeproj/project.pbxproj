@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */; };
+		179E71E5272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */; };
+		179E71E6272201220061BED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D5272201200061BED4 /* ContentView.swift */; };
+		179E71E7272201220061BED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D5272201200061BED4 /* ContentView.swift */; };
+		179E71E8272201220061BED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179E71D6272201220061BED4 /* Assets.xcassets */; };
+		179E71E9272201220061BED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179E71D6272201220061BED4 /* Assets.xcassets */; };
+		179E71F6272201DD0061BED4 /* journalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 179E71F5272201DD0061BED4 /* journalData.json */; };
+		179E71F7272201DD0061BED4 /* journalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 179E71F5272201DD0061BED4 /* journalData.json */; };
+		179E71F9272202030061BED4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71F8272202030061BED4 /* Entry.swift */; };
+		179E71FA272202030061BED4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71F8272202030061BED4 /* Entry.swift */; };
+		179E71FC272202DF0061BED4 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FB272202DF0061BED4 /* JournalData.swift */; };
+		179E71FD272202DF0061BED4 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FB272202DF0061BED4 /* JournalData.swift */; };
+		179E71FF272204820061BED4 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FE272204820061BED4 /* JournalStore.swift */; };
+		179E7200272204820061BED4 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FE272204820061BED4 /* JournalStore.swift */; };
+		179E72022722084F0061BED4 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E72012722084F0061BED4 /* EntryDetail.swift */; };
+		179E72032722084F0061BED4 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E72012722084F0061BED4 /* EntryDetail.swift */; };
+		179E720527220B440061BED4 /* AddNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E720427220B440061BED4 /* AddNewEntry.swift */; };
+		179E720627220B440061BED4 /* AddNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E720427220B440061BED4 /* AddNewEntry.swift */; };
+		17DBA8C7272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
+		17DBA8C8272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenTaberAvivZohmanProject3App.swift; sourceTree = "<group>"; };
+		179E71D5272201200061BED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		179E71D6272201220061BED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		179E71DB272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curren_Taber_and_Aviv_Zohman_Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		179E71E1272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curren_Taber_and_Aviv_Zohman_Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		179E71E3272201220061BED4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		179E71F5272201DD0061BED4 /* journalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journalData.json; sourceTree = "<group>"; };
+		179E71F8272202030061BED4 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		179E71FB272202DF0061BED4 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
+		179E71FE272204820061BED4 /* JournalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalStore.swift; sourceTree = "<group>"; };
+		179E72012722084F0061BED4 /* EntryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetail.swift; sourceTree = "<group>"; };
+		179E720427220B440061BED4 /* AddNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntry.swift; sourceTree = "<group>"; };
+		17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JournalAssets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179E71D8272201220061BED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179E71DE272201220061BED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		179E71CE272201200061BED4 = {
+			isa = PBXGroup;
+			children = (
+				179E71D3272201200061BED4 /* Shared */,
+				179E71E2272201220061BED4 /* macOS */,
+				179E71DC272201220061BED4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		179E71D3272201200061BED4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				179E71F5272201DD0061BED4 /* journalData.json */,
+				179E71D6272201220061BED4 /* Assets.xcassets */,
+				17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */,
+				179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */,
+				179E71F8272202030061BED4 /* Entry.swift */,
+				179E71FB272202DF0061BED4 /* JournalData.swift */,
+				179E71FE272204820061BED4 /* JournalStore.swift */,
+				179E71D5272201200061BED4 /* ContentView.swift */,
+				179E72012722084F0061BED4 /* EntryDetail.swift */,
+				179E720427220B440061BED4 /* AddNewEntry.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		179E71DC272201220061BED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				179E71DB272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */,
+				179E71E1272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		179E71E2272201220061BED4 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				179E71E3272201220061BED4 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		179E71DA272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3 (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179E71EC272201220061BED4 /* Build configuration list for PBXNativeTarget "Curren_Taber_and_Aviv_Zohman_Project3 (iOS)" */;
+			buildPhases = (
+				179E71D7272201220061BED4 /* Sources */,
+				179E71D8272201220061BED4 /* Frameworks */,
+				179E71D9272201220061BED4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Curren_Taber_and_Aviv_Zohman_Project3 (iOS)";
+			productName = "ListNavDemo (iOS)";
+			productReference = 179E71DB272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		179E71E0272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3 (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179E71EF272201220061BED4 /* Build configuration list for PBXNativeTarget "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)" */;
+			buildPhases = (
+				179E71DD272201220061BED4 /* Sources */,
+				179E71DE272201220061BED4 /* Frameworks */,
+				179E71DF272201220061BED4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)";
+			productName = "ListNavDemo (macOS)";
+			productReference = 179E71E1272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		179E71CF272201200061BED4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					179E71DA272201220061BED4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					179E71E0272201220061BED4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 179E71D2272201200061BED4 /* Build configuration list for PBXProject "Curren_Taber_and_Aviv_Zohman_Project3" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 179E71CE272201200061BED4;
+			productRefGroup = 179E71DC272201220061BED4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				179E71DA272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3 (iOS) */,
+				179E71E0272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3 (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		179E71D9272201220061BED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179E71E8272201220061BED4 /* Assets.xcassets in Resources */,
+				17DBA8C7272A547B00203B07 /* JournalAssets.xcassets in Resources */,
+				179E71F6272201DD0061BED4 /* journalData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179E71DF272201220061BED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179E71E9272201220061BED4 /* Assets.xcassets in Resources */,
+				17DBA8C8272A547B00203B07 /* JournalAssets.xcassets in Resources */,
+				179E71F7272201DD0061BED4 /* journalData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		179E71D7272201220061BED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179E71FC272202DF0061BED4 /* JournalData.swift in Sources */,
+				179E71E6272201220061BED4 /* ContentView.swift in Sources */,
+				179E720527220B440061BED4 /* AddNewEntry.swift in Sources */,
+				179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
+				179E72022722084F0061BED4 /* EntryDetail.swift in Sources */,
+				179E71F9272202030061BED4 /* Entry.swift in Sources */,
+				179E71FF272204820061BED4 /* JournalStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		179E71DD272201220061BED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179E71FD272202DF0061BED4 /* JournalData.swift in Sources */,
+				179E71E7272201220061BED4 /* ContentView.swift in Sources */,
+				179E720627220B440061BED4 /* AddNewEntry.swift in Sources */,
+				179E71E5272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
+				179E72032722084F0061BED4 /* EntryDetail.swift in Sources */,
+				179E71FA272202030061BED4 /* Entry.swift in Sources */,
+				179E7200272204820061BED4 /* JournalStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		179E71EA272201220061BED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		179E71EB272201220061BED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		179E71ED272201220061BED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S7QWS5Q5U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.currentaber.CurrenTaberAvivZohmanProject3;
+				PRODUCT_NAME = Curren_Taber_and_Aviv_Zohman_Project3;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		179E71EE272201220061BED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S7QWS5Q5U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.currentaber.CurrenTaberAvivZohmanProject3;
+				PRODUCT_NAME = Curren_Taber_and_Aviv_Zohman_Project3;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		179E71F0272201220061BED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S7QWS5Q5U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.currentaber.CurrenTaberProject2;
+				PRODUCT_NAME = Curren_Taber_and_Aviv_Zohman_Project3;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		179E71F1272201220061BED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6S7QWS5Q5U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.currentaber.CurrenTaberProject2;
+				PRODUCT_NAME = Curren_Taber_and_Aviv_Zohman_Project3;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179E71D2272201200061BED4 /* Build configuration list for PBXProject "Curren_Taber_and_Aviv_Zohman_Project3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179E71EA272201220061BED4 /* Debug */,
+				179E71EB272201220061BED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179E71EC272201220061BED4 /* Build configuration list for PBXNativeTarget "Curren_Taber_and_Aviv_Zohman_Project3 (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179E71ED272201220061BED4 /* Debug */,
+				179E71EE272201220061BED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179E71EF272201220061BED4 /* Build configuration list for PBXNativeTarget "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179E71F0272201220061BED4 /* Debug */,
+				179E71F1272201220061BED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 179E71CF272201200061BED4 /* Project object */;
+}

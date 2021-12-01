@@ -1,0 +1,38 @@
+[
+    {
+        "id": "aa32jj887hhg55",
+        "name": "Bavel",
+        "description": "Located in Downtown Los Angeles, this Middle Eastern restaurant features cuisine from Chefs Ori Menashe and Genevieve Gergis.",
+        "isAllergyFriendly": false,
+        "imageName": "Bavel"
+    },
+    {
+        "id": "bb32jj887hhg77",
+        "name": "Broken Spanish",
+        "description": "Located in Downtown Los Angeles, this Modern Mexican restaurant features cuisine from Chef Ray Garcia.",
+        "isAllergyFriendly": true,
+        "imageName": "Broken_Spanish"
+    },
+    {
+        "id": "cc32jj887hhg66",
+        "name": "Konbi",
+        "description": "Located in Echo Park, this daytime restaurant features Japanese-inspired sandwiches, French pastries, and coffee.",
+        "isAllergyFriendly": true,
+        "imageName": "Konbi"
+    },
+    {
+        "id": "dd32jj887hhg88",
+        "name": "Republique",
+        "description": "Located in the heart of Los Angeles, this French restaurant serves dishes by Chefs Walter Manzke and Margarita Manzke",
+        "isAllergyFriendly": false,
+        "imageName": "Republique"
+    },
+    {
+        "id": "ee32jj887hhg99",
+        "name": "Rossoblu",
+        "description": "Located in Downtown Los Angeles, this Italian restaurant serves handmade pasta made fresh every day.",
+        "isAllergyFriendly": true,
+        "imageName": "Rossoblu"
+    }
+    
+]
