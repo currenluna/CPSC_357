@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "179E71E0272201220061BED4"
-               BuildableName = "Curren_Taber_Project2.app"
+               BuildableName = "Curren_Taber_and_Aviv_Zohman_Project3.app"
                BlueprintName = "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)"
                ReferencedContainer = "container:Curren_Taber_and_Aviv_Zohman_Project3.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "179E71E0272201220061BED4"
-            BuildableName = "Curren_Taber_Project2.app"
+            BuildableName = "Curren_Taber_and_Aviv_Zohman_Project3.app"
             BlueprintName = "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)"
             ReferencedContainer = "container:Curren_Taber_and_Aviv_Zohman_Project3.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "179E71E0272201220061BED4"
-            BuildableName = "Curren_Taber_Project2.app"
+            BuildableName = "Curren_Taber_and_Aviv_Zohman_Project3.app"
             BlueprintName = "Curren_Taber_and_Aviv_Zohman_Project3 (macOS)"
             ReferencedContainer = "container:Curren_Taber_and_Aviv_Zohman_Project3.xcodeproj">
          </BuildableReference>
