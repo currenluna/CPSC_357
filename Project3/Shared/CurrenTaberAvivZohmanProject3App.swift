@@ -13,7 +13,12 @@ import SwiftUI
 struct CurrenTaberAvivZohmanProject3: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            //get access to view context
+            let viewContext = CoreDataManager.shared.persistentStoreContainer.viewContext
+            
+            //inject view context
+            ContentView(vm: DreamListViewModel(context:viewContext)).environment(\.managedObjectContext, viewContext)
         }
     }
 }

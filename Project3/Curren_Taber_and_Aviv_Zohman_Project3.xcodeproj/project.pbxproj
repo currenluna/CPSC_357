@@ -31,6 +31,20 @@
 		17B47CC12760274600273747 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B47CBF2760274600273747 /* Text.swift */; };
 		17DBA8C7272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
 		17DBA8C8272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
+		AAFB477C2761AFA6004BAE1C /* DreamModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAFB477A2761AFA6004BAE1C /* DreamModel.xcdatamodeld */; };
+		AAFB477D2761AFA6004BAE1C /* DreamModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAFB477A2761AFA6004BAE1C /* DreamModel.xcdatamodeld */; };
+		AAFB47802761B0AC004BAE1C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB477F2761B0AC004BAE1C /* CoreDataManager.swift */; };
+		AAFB47812761B0AC004BAE1C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB477F2761B0AC004BAE1C /* CoreDataManager.swift */; };
+		AAFB47842761B1E0004BAE1C /* DreamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47832761B1E0004BAE1C /* DreamListViewModel.swift */; };
+		AAFB47852761B1E0004BAE1C /* DreamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47832761B1E0004BAE1C /* DreamListViewModel.swift */; };
+		AAFB47872761B205004BAE1C /* AddDreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47862761B205004BAE1C /* AddDreamViewModel.swift */; };
+		AAFB47882761B205004BAE1C /* AddDreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47862761B205004BAE1C /* AddDreamViewModel.swift */; };
+		AAFB478B2761B243004BAE1C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB478A2761B243004BAE1C /* BaseModel.swift */; };
+		AAFB478C2761B243004BAE1C /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB478A2761B243004BAE1C /* BaseModel.swift */; };
+		AAFB478E2761B287004BAE1C /* Dream+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB478D2761B287004BAE1C /* Dream+Extensions.swift */; };
+		AAFB478F2761B287004BAE1C /* Dream+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB478D2761B287004BAE1C /* Dream+Extensions.swift */; };
+		AAFB47912761B50A004BAE1C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47902761B50A004BAE1C /* View+Extensions.swift */; };
+		AAFB47922761B50A004BAE1C /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB47902761B50A004BAE1C /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +63,13 @@
 		17B47CBA2760048900273747 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		17B47CBF2760274600273747 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JournalAssets.xcassets; sourceTree = "<group>"; };
+		AAFB477B2761AFA6004BAE1C /* DreamModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamModel.xcdatamodel; sourceTree = "<group>"; };
+		AAFB477F2761B0AC004BAE1C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AAFB47832761B1E0004BAE1C /* DreamListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListViewModel.swift; sourceTree = "<group>"; };
+		AAFB47862761B205004BAE1C /* AddDreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDreamViewModel.swift; sourceTree = "<group>"; };
+		AAFB478A2761B243004BAE1C /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		AAFB478D2761B287004BAE1C /* Dream+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dream+Extensions.swift"; sourceTree = "<group>"; };
+		AAFB47902761B50A004BAE1C /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +102,9 @@
 		179E71D3272201200061BED4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AAFB47892761B232004BAE1C /* Models */,
+				AAFB47822761B1C0004BAE1C /* View Models */,
+				AAFB477E2761B019004BAE1C /* Managers */,
 				179E71F5272201DD0061BED4 /* journalData.json */,
 				179E71D6272201220061BED4 /* Assets.xcassets */,
 				17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */,
@@ -92,6 +116,7 @@
 				179E72012722084F0061BED4 /* EntryDetail.swift */,
 				179E720427220B440061BED4 /* AddNewEntry.swift */,
 				17B47CBD27600B7900273747 /* Extensions */,
+				AAFB477A2761AFA6004BAE1C /* DreamModel.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -118,8 +143,35 @@
 			children = (
 				17B47CBA2760048900273747 /* Color.swift */,
 				17B47CBF2760274600273747 /* Text.swift */,
+				AAFB478D2761B287004BAE1C /* Dream+Extensions.swift */,
+				AAFB47902761B50A004BAE1C /* View+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAFB477E2761B019004BAE1C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AAFB477F2761B0AC004BAE1C /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		AAFB47822761B1C0004BAE1C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAFB47832761B1E0004BAE1C /* DreamListViewModel.swift */,
+				AAFB47862761B205004BAE1C /* AddDreamViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		AAFB47892761B232004BAE1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAFB478A2761B243004BAE1C /* BaseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,15 +276,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFB47842761B1E0004BAE1C /* DreamListViewModel.swift in Sources */,
+				AAFB47872761B205004BAE1C /* AddDreamViewModel.swift in Sources */,
+				AAFB478B2761B243004BAE1C /* BaseModel.swift in Sources */,
 				179E71FC272202DF0061BED4 /* JournalData.swift in Sources */,
 				179E71E6272201220061BED4 /* ContentView.swift in Sources */,
 				179E720527220B440061BED4 /* AddNewEntry.swift in Sources */,
+				AAFB47912761B50A004BAE1C /* View+Extensions.swift in Sources */,
 				179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
 				17B47CC02760274600273747 /* Text.swift in Sources */,
 				179E72022722084F0061BED4 /* EntryDetail.swift in Sources */,
 				17B47CBB2760048900273747 /* Color.swift in Sources */,
 				179E71F9272202030061BED4 /* Entry.swift in Sources */,
+				AAFB478E2761B287004BAE1C /* Dream+Extensions.swift in Sources */,
 				179E71FF272204820061BED4 /* JournalStore.swift in Sources */,
+				AAFB477C2761AFA6004BAE1C /* DreamModel.xcdatamodeld in Sources */,
+				AAFB47802761B0AC004BAE1C /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,15 +299,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFB47852761B1E0004BAE1C /* DreamListViewModel.swift in Sources */,
+				AAFB47882761B205004BAE1C /* AddDreamViewModel.swift in Sources */,
+				AAFB478C2761B243004BAE1C /* BaseModel.swift in Sources */,
 				179E71FD272202DF0061BED4 /* JournalData.swift in Sources */,
 				179E71E7272201220061BED4 /* ContentView.swift in Sources */,
 				179E720627220B440061BED4 /* AddNewEntry.swift in Sources */,
+				AAFB47922761B50A004BAE1C /* View+Extensions.swift in Sources */,
 				179E71E5272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
 				17B47CC12760274600273747 /* Text.swift in Sources */,
 				179E72032722084F0061BED4 /* EntryDetail.swift in Sources */,
 				17B47CBC2760048900273747 /* Color.swift in Sources */,
 				179E71FA272202030061BED4 /* Entry.swift in Sources */,
+				AAFB478F2761B287004BAE1C /* Dream+Extensions.swift in Sources */,
 				179E7200272204820061BED4 /* JournalStore.swift in Sources */,
+				AAFB477D2761AFA6004BAE1C /* DreamModel.xcdatamodeld in Sources */,
+				AAFB47812761B0AC004BAE1C /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +582,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AAFB477A2761AFA6004BAE1C /* DreamModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AAFB477B2761AFA6004BAE1C /* DreamModel.xcdatamodel */,
+			);
+			currentVersion = AAFB477B2761AFA6004BAE1C /* DreamModel.xcdatamodel */;
+			path = DreamModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 179E71CF272201200061BED4 /* Project object */;
 }

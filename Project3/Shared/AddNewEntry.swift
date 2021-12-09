@@ -10,47 +10,79 @@ import SwiftUI
 //  Add Item View
 struct AddNewEntry: View {
     //  Initializes journalStore with an argument from ContentView
-    @StateObject var journalStore: JournalStore
-    //  Uses State variables to store user input
-    @State private var isAllergyFriendly = false
-    @State private var name: String = ""
-    @State private var description: String = ""
+//    @StateObject var journalStore: JournalStore
+//    //  Uses State variables to store user input
+//    @State private var isAllergyFriendly = false
+//    @State private var name: String = ""
+//    @State private var description: String = ""
+    
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    //passing in AddDreamViewModel
+    @ObservedObject var vm: AddDreamViewModel
+    //initialize AddDreamViewModel
+    init(vm: AddDreamViewModel) {
+        self.vm = vm
+    }
+    
+    
     
     //  Body
     var body: some View {
         Form {
-            Section(header: Text("Restaurant Details")) {
-                Image(systemName: "photo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
-                DataInput(title: "Name", userInput: $name)
-                DataInput(title: "Description", userInput: $description)
-                
-                Toggle(isOn: $isAllergyFriendly) {
-                    Text("Allergy Friendly?").font(.headline)
-                }.padding()
-            }
+            TextField("Title", text: $vm.title)
+            TextField("Entry", text: $vm.entry)
             
-            //  Calls addNewRestaurant function
-            Button(action: addNewEntry) {
-                Text("Add Restaurant")
-            }
+            Button("Save") {
+                
+                vm.save()
+                presentationMode.wrappedValue.dismiss()
+                
+            }.centerHorizontally()
+            
+            .navigationTitle("Add Dream")
+            
+            
+//            Section(header: Text("Restaurant Details")) {
+//                Image(systemName: "photo")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fit)
+//                    .padding()
+//                DataInput(title: "Name", userInput: $name)
+//                DataInput(title: "Description", userInput: $description)
+//
+//                Toggle(isOn: $isAllergyFriendly) {
+//                    Text("Allergy Friendly?").font(.headline)
+//                }.padding()
+//            }
+//
+//            //  Calls addNewRestaurant function
+//            Button(action: addNewEntry) {
+//                Text("Add Restaurant")
+//            }
         }
     }
     
     //  Function called when "Add Restaurant" Button is pressed
-    func addNewEntry() {
-        let newEntry = Entry(id: UUID().uuidString, name: name, description: description, isAllergyFriendly: isAllergyFriendly, imageName: "No_Image")
-        
-        journalStore.entries.append(newEntry)
-    }
+//    func addNewEntry() {
+//        let newEntry = Entry(id: UUID().uuidString, name: name, description: description, isAllergyFriendly: isAllergyFriendly, imageName: "No_Image")
+//
+//        journalStore.entries.append(newEntry)
+//    }
 }
 
 //  Preview Structure
 struct AddNewEntry_Previews: PreviewProvider {
     static var previews: some View {
-        AddNewEntry(journalStore: JournalStore(entries: journalData))
+        
+        //must pass view context to create view model
+        let viewContext = CoreDataManager.shared.persistentStoreContainer.viewContext
+        NavigationView {
+            AddNewEntry(vm: AddDreamViewModel(context: viewContext))
+        }
+        
+//        AddNewEntry(journalStore: JournalStore(entries: journalData))
     }
 }
 
