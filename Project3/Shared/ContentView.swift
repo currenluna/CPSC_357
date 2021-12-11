@@ -24,7 +24,7 @@ struct ContentView: View {
     init(vm: DreamListViewModel) {
         self.dreamListVM = vm
         
-        //change color and size of navigation title
+        //change color avigation title
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color(.white))]
     }
     
@@ -35,6 +35,16 @@ struct ContentView: View {
             dreamListVM.deleteDream(dreamId: dream.id)
         }
     }
+    
+    private func getDream(at offsets: IndexSet) {
+        offsets.forEach {
+            index in
+            let dream = dreamListVM.dreams[index]
+            dreamListVM.getDream(dreamId: dream.id)
+        }
+    }
+    
+    
     
     
     
@@ -62,31 +72,23 @@ struct ContentView: View {
                         
                         ForEach(dreamListVM.dreams) {
                             dream in
+            
+                            //navigate to EntryDetail screen and pass the view context, current dream title and entry. The current dream title and entry will be displayed in EntryDetail
+                            NavigationLink(destination: EntryDetail(vm: DreamListViewModel(context: viewContext), selectedDream: dream)){
                             Text(dream.title).foregroundColor(.white)
                                 .font(.title)
+                            }
+
                         }.onDelete(perform: deleteDream)
-                        
-                        //CURREN PREVIOUS CODE
-                        //  Creates a row for each Entry in journalStore
-//                        ForEach(journalStore.entries) { entry in
-//                            ListCell(entry: entry)
-//                        }
-//                        .onDelete(perform: deleteItems)
-//                        .onMove(perform: moveItems) - No need to move, but here for reference
                         .listRowBackground(Color.purple_dark)
                         .listRowSeparator(.hidden)
                         .listRowSeparatorTint(Color.blue_light)
                         .listItemTint(.red)
                     }
                     .listStyle(.plain)
-                    //CURREN CODE
-                    //  Buttons for adding new list items and editing the list
-//                    .navigationBarItems(leading: NavigationLink(destination: AddNewEntry(journalStore: self.journalStore)) {
-//                        Image(systemName: "gearshape.fill")
-//                            .resizable()
-//                            .frame(width: 30, height: 30)
-//                    }, trailing: EditButton().font(Font.butn))
                 }
+                
+                //change this to navigate to new page rather than pop up sheet
                 .sheet(isPresented: $isPresented,onDismiss: {
                     //dismiss
                 }, content: {
@@ -100,41 +102,10 @@ struct ContentView: View {
                         }
                     }
                 }
-                
-//                NavigationLink(destination: AddNewEntry(journalStore: self.journalStore)) {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 111, height: 111)
-//                            .foregroundColor(Color.blue_dark)
-//                            .padding()
-//                            .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 0)
-//                        Rectangle()
-//                            .frame(width: 5, height: 69)
-//                            .foregroundColor(.blue_light)
-//                        Rectangle()
-//                            .frame(width: 69, height: 5)
-//                            .foregroundColor(.blue_light)
-//                    }
-//                }
             }
         }
         .accentColor(Color.blue_dark)
     }
-    
-//
-//    func addButton() {
-//
-//    }
-//
-//    //  Enables user to delete list items
-//    func deleteItems(at offsets: IndexSet) {
-//        journalStore.entries.remove(atOffsets: offsets)
-//    }
-//
-//    //  Enables user to move list items
-//    func moveItems(from source: IndexSet, to destination: Int) {
-//        journalStore.entries.move(fromOffsets: source, toOffset: destination)
-//    }
 }
 
 //  Preview Structure
@@ -161,9 +132,9 @@ struct ListCell: View {
         // A ZStack with a custom view on top of an empty NavigationLink
         ZStack {
             // Add an empty view to allow for a custom list row arrow
-            NavigationLink(destination: EntryDetail(selectedEntry: entry)) {
-                EmptyView()
-            }
+////            NavigationLink(destination: EntryDetail(selectedEntry: entry)) {
+////                EmptyView()
+//            }
             
             VStack {
                 HStack {

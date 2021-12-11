@@ -48,6 +48,40 @@ class DreamListViewModel: NSObject, ObservableObject {
         }
     }
     
+    enum VendingMachineError: Error {
+        case invalidSelection
+        case insufficientFunds(coinsNeeded: Int)
+        case outOfStock
+    }
+    
+    func getDream(dreamId: NSManagedObjectID) throws -> Dream {
+        do {
+            guard let dream =  try context.existingObject(with: dreamId) as? Dream else {
+                throw VendingMachineError.invalidSelection
+            }
+            try return dream
+        } catch {
+            print(error)
+        }
+    }
+//    
+//    func getDream(dreamId: NSManagedObjectID) -> Dream{
+//        
+////        let dream = try context.existingObject(with: dreamId) as? Dream else {
+////            return dream
+////        }
+//
+//        do {
+//            guard let dream =  try context.existingObject(with: dreamId) as? Dream else {
+////                return dream
+//            }
+//            try dream
+//        } catch {
+//            print(error)
+//        }
+//        return dream
+//    }
+    
 }
 
 extension DreamListViewModel: NSFetchedResultsControllerDelegate {
@@ -62,6 +96,7 @@ extension DreamListViewModel: NSFetchedResultsControllerDelegate {
 }
 
 //child model
+//creates unique identifier per dream (Identifiable)
 struct DreamViewModel: Identifiable {
     private var dream: Dream
     

@@ -24,6 +24,9 @@ struct AddNewEntry: View {
     //initialize AddDreamViewModel
     init(vm: AddDreamViewModel) {
         self.vm = vm
+        
+        //change color and size of navigation title
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color(.white))]
     }
     
     
