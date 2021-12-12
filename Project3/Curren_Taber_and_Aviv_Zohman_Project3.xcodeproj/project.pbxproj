@@ -31,6 +31,8 @@
 		17B47CC12760274600273747 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B47CBF2760274600273747 /* Text.swift */; };
 		17DBA8C7272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
 		17DBA8C8272A547B00203B07 /* JournalAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */; };
+		AA05352A2765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA0535282765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld */; };
+		AA05352D2765CB0700BD1367 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA05352C2765CB0700BD1367 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		17B47CBA2760048900273747 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		17B47CBF2760274600273747 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = JournalAssets.xcassets; sourceTree = "<group>"; };
+		AA0535292765CACD00BD1367 /* DreamCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		AA05352C2765CB0700BD1367 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		179E71D3272201200061BED4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AA05352B2765CAF900BD1367 /* Managers */,
+				AA0535282765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld */,
 				179E71F5272201DD0061BED4 /* journalData.json */,
 				179E71D6272201220061BED4 /* Assets.xcassets */,
 				17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */,
@@ -120,6 +126,14 @@
 				17B47CBF2760274600273747 /* Text.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA05352B2765CAF900BD1367 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AA05352C2765CB0700BD1367 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,11 +242,13 @@
 				179E71E6272201220061BED4 /* ContentView.swift in Sources */,
 				179E720527220B440061BED4 /* AddNewEntry.swift in Sources */,
 				179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
+				AA05352A2765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld in Sources */,
 				17B47CC02760274600273747 /* Text.swift in Sources */,
 				179E72022722084F0061BED4 /* EntryDetail.swift in Sources */,
 				17B47CBB2760048900273747 /* Color.swift in Sources */,
 				179E71F9272202030061BED4 /* Entry.swift in Sources */,
 				179E71FF272204820061BED4 /* JournalStore.swift in Sources */,
+				AA05352D2765CB0700BD1367 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +532,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA0535282765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA0535292765CACD00BD1367 /* DreamCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = AA0535292765CACD00BD1367 /* DreamCoreDataModel.xcdatamodel */;
+			path = DreamCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 179E71CF272201200061BED4 /* Project object */;
 }
