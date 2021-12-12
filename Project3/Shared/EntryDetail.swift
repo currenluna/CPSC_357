@@ -43,6 +43,7 @@ struct EntryDetail: View {
                 Text(dream.entry ?? "")
                     .font(.body)
                     .foregroundColor(color2)
+                    .padding()
 
 //                HStack {
 //                    Text("Allergy Friendly?")
@@ -53,7 +54,7 @@ struct EntryDetail: View {
 //                        .foregroundColor(color4)
 //                }
 
-            }
+            }.font(.title2)
             
             //  Calls colorize function
 //            Button(action: colorizeView) {

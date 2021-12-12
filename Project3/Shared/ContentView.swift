@@ -64,6 +64,10 @@ struct ContentView: View {
                                 populateDreams()
                             }
                         })
+                        .listRowBackground(Color.purple_dark)
+                        .listRowSeparator(.hidden)
+                        .listRowSeparatorTint(Color.blue_light)
+                        .listItemTint(.red)
                         
                             //CURREN CODE
 //                        ForEach(journalStore.entries) { entry in
@@ -102,11 +106,11 @@ struct ContentView: View {
                     }
                 }
             }
+            .onAppear(perform: {
+                populateDreams()
+            })
         }
         .accentColor(Color.blue_dark)
-        .onAppear(perform: {
-            populateDreams()
-        })
     }
     
     
