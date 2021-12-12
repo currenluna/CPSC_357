@@ -7,24 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174F5CE62766AB1B00C6F12E /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F5CE42766AB1B00C6F12E /* DrawingView.swift */; };
+		174F5CE72766AB1B00C6F12E /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F5CE52766AB1B00C6F12E /* CanvasView.swift */; };
+		174F5CE92766AB2600C6F12E /* Rendition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F5CE82766AB2600C6F12E /* Rendition.swift */; };
 		179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */; };
 		179E71E5272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */; };
 		179E71E6272201220061BED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D5272201200061BED4 /* ContentView.swift */; };
-		179E71E7272201220061BED4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71D5272201200061BED4 /* ContentView.swift */; };
 		179E71E8272201220061BED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179E71D6272201220061BED4 /* Assets.xcassets */; };
 		179E71E9272201220061BED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179E71D6272201220061BED4 /* Assets.xcassets */; };
-		179E71F6272201DD0061BED4 /* journalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 179E71F5272201DD0061BED4 /* journalData.json */; };
-		179E71F7272201DD0061BED4 /* journalData.json in Resources */ = {isa = PBXBuildFile; fileRef = 179E71F5272201DD0061BED4 /* journalData.json */; };
-		179E71F9272202030061BED4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71F8272202030061BED4 /* Entry.swift */; };
-		179E71FA272202030061BED4 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71F8272202030061BED4 /* Entry.swift */; };
-		179E71FC272202DF0061BED4 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FB272202DF0061BED4 /* JournalData.swift */; };
-		179E71FD272202DF0061BED4 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FB272202DF0061BED4 /* JournalData.swift */; };
-		179E71FF272204820061BED4 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FE272204820061BED4 /* JournalStore.swift */; };
-		179E7200272204820061BED4 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E71FE272204820061BED4 /* JournalStore.swift */; };
 		179E72022722084F0061BED4 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E72012722084F0061BED4 /* EntryDetail.swift */; };
-		179E72032722084F0061BED4 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E72012722084F0061BED4 /* EntryDetail.swift */; };
 		179E720527220B440061BED4 /* AddNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E720427220B440061BED4 /* AddNewEntry.swift */; };
-		179E720627220B440061BED4 /* AddNewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E720427220B440061BED4 /* AddNewEntry.swift */; };
 		17B47CBB2760048900273747 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B47CBA2760048900273747 /* Color.swift */; };
 		17B47CBC2760048900273747 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B47CBA2760048900273747 /* Color.swift */; };
 		17B47CC02760274600273747 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B47CBF2760274600273747 /* Text.swift */; };
@@ -36,16 +28,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		174F5CE42766AB1B00C6F12E /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawingView.swift; path = ../../../../../../../../Desktop/PencilKit/DrawingView.swift; sourceTree = "<group>"; };
+		174F5CE52766AB1B00C6F12E /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasView.swift; path = ../../../../../../../../Desktop/PencilKit/CanvasView.swift; sourceTree = "<group>"; };
+		174F5CE82766AB2600C6F12E /* Rendition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rendition.swift; sourceTree = "<group>"; };
 		179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenTaberAvivZohmanProject3App.swift; sourceTree = "<group>"; };
 		179E71D5272201200061BED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		179E71D6272201220061BED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179E71DB272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curren_Taber_and_Aviv_Zohman_Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179E71E1272201220061BED4 /* Curren_Taber_and_Aviv_Zohman_Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Curren_Taber_and_Aviv_Zohman_Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179E71E3272201220061BED4 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		179E71F5272201DD0061BED4 /* journalData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journalData.json; sourceTree = "<group>"; };
-		179E71F8272202030061BED4 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		179E71FB272202DF0061BED4 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
-		179E71FE272204820061BED4 /* JournalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalStore.swift; sourceTree = "<group>"; };
 		179E72012722084F0061BED4 /* EntryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetail.swift; sourceTree = "<group>"; };
 		179E720427220B440061BED4 /* AddNewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEntry.swift; sourceTree = "<group>"; };
 		17B47CBA2760048900273747 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -73,6 +64,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		174F5CDB2766AA9000C6F12E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				179E71D5272201200061BED4 /* ContentView.swift */,
+				179E72012722084F0061BED4 /* EntryDetail.swift */,
+				179E720427220B440061BED4 /* AddNewEntry.swift */,
+				174F5CE52766AB1B00C6F12E /* CanvasView.swift */,
+				174F5CE42766AB1B00C6F12E /* DrawingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		179E71CE272201200061BED4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,18 +88,13 @@
 		179E71D3272201200061BED4 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */,
+				174F5CDB2766AA9000C6F12E /* Views */,
 				AA05352B2765CAF900BD1367 /* Managers */,
 				AA0535282765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld */,
-				179E71F5272201DD0061BED4 /* journalData.json */,
 				179E71D6272201220061BED4 /* Assets.xcassets */,
 				17DBA8C6272A547B00203B07 /* JournalAssets.xcassets */,
-				179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */,
-				179E71F8272202030061BED4 /* Entry.swift */,
-				179E71FB272202DF0061BED4 /* JournalData.swift */,
-				179E71FE272204820061BED4 /* JournalStore.swift */,
-				179E71D5272201200061BED4 /* ContentView.swift */,
-				179E72012722084F0061BED4 /* EntryDetail.swift */,
-				179E720427220B440061BED4 /* AddNewEntry.swift */,
+				174F5CE82766AB2600C6F12E /* Rendition.swift */,
 				17B47CBD27600B7900273747 /* Extensions */,
 			);
 			path = Shared;
@@ -217,7 +215,6 @@
 			files = (
 				179E71E8272201220061BED4 /* Assets.xcassets in Resources */,
 				17DBA8C7272A547B00203B07 /* JournalAssets.xcassets in Resources */,
-				179E71F6272201DD0061BED4 /* journalData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +224,6 @@
 			files = (
 				179E71E9272201220061BED4 /* Assets.xcassets in Resources */,
 				17DBA8C8272A547B00203B07 /* JournalAssets.xcassets in Resources */,
-				179E71F7272201DD0061BED4 /* journalData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,16 +234,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179E71FC272202DF0061BED4 /* JournalData.swift in Sources */,
 				179E71E6272201220061BED4 /* ContentView.swift in Sources */,
+				174F5CE72766AB1B00C6F12E /* CanvasView.swift in Sources */,
 				179E720527220B440061BED4 /* AddNewEntry.swift in Sources */,
+				174F5CE62766AB1B00C6F12E /* DrawingView.swift in Sources */,
 				179E71E4272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
+				174F5CE92766AB2600C6F12E /* Rendition.swift in Sources */,
 				AA05352A2765CACD00BD1367 /* DreamCoreDataModel.xcdatamodeld in Sources */,
 				17B47CC02760274600273747 /* Text.swift in Sources */,
 				179E72022722084F0061BED4 /* EntryDetail.swift in Sources */,
 				17B47CBB2760048900273747 /* Color.swift in Sources */,
-				179E71F9272202030061BED4 /* Entry.swift in Sources */,
-				179E71FF272204820061BED4 /* JournalStore.swift in Sources */,
 				AA05352D2765CB0700BD1367 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179E71FD272202DF0061BED4 /* JournalData.swift in Sources */,
-				179E71E7272201220061BED4 /* ContentView.swift in Sources */,
-				179E720627220B440061BED4 /* AddNewEntry.swift in Sources */,
 				179E71E5272201220061BED4 /* CurrenTaberAvivZohmanProject3App.swift in Sources */,
 				17B47CC12760274600273747 /* Text.swift in Sources */,
-				179E72032722084F0061BED4 /* EntryDetail.swift in Sources */,
 				17B47CBC2760048900273747 /* Color.swift in Sources */,
-				179E71FA272202030061BED4 /* Entry.swift in Sources */,
-				179E7200272204820061BED4 /* JournalStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
