@@ -155,7 +155,7 @@ struct ListCell: View {
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
                         Text(dream.title ?? "")
-                            .font(Font.bod)
+                            .font(Font.h2)
 //                        Text(entry.name)
 //                            .font(Font.h2)
                     }
