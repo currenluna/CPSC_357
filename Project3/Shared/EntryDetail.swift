@@ -25,12 +25,12 @@ struct EntryDetail: View {
     
     @ObservedObject private var dreamListVM: DreamListViewModel
     
-    let selectedDream: DreamViewModel
-    
+//    let selectedDream: DreamViewModel
+//
     //itializing DreamListViewModel to actually see it in Content View
-    init(vm: DreamListViewModel, selectedDream: DreamViewModel) {
+    init(vm: DreamListViewModel) {
         self.dreamListVM = vm
-        self.selectedDream = selectedDream
+//        self.selectedDream = selectedDream
         
         //change color ,avigation title
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.init(Color(.white))]
@@ -41,8 +41,8 @@ struct EntryDetail: View {
     var body: some View {
         
         //pass in dream entry dynamically, instead
-        Text(selectedDream.entry)
-//        Text(dreamListVM.dreams[0].entry)
+//        Text(selectedDream.entry)
+        Text(dreamListVM.dreams[0].entry)
 //        Text($vm.entry)
         
         
@@ -99,7 +99,7 @@ struct EntryDetail_Previews: PreviewProvider {
         //must pass view context to create view model
         let viewContext = CoreDataManager.shared.persistentStoreContainer.viewContext
         NavigationView {
-            EntryDetail(vm: DreamListViewModel(context: viewContext), selectedDream: DreamViewModel)
+            EntryDetail(vm: DreamListViewModel(context: viewContext))
         }
 //        EntryDetail(selectedEntry: journalData[0])
     }

@@ -48,38 +48,17 @@ class DreamListViewModel: NSObject, ObservableObject {
         }
     }
     
-    enum VendingMachineError: Error {
-        case invalidSelection
-        case insufficientFunds(coinsNeeded: Int)
-        case outOfStock
-    }
-    
-    func getDream(dreamId: NSManagedObjectID) throws -> Dream {
-        do {
-            guard let dream =  try context.existingObject(with: dreamId) as? Dream else {
-                throw VendingMachineError.invalidSelection
-            }
-            try return dream
-        } catch {
-            print(error)
-        }
-    }
-//    
-//    func getDream(dreamId: NSManagedObjectID) -> Dream{
-//        
-////        let dream = try context.existingObject(with: dreamId) as? Dream else {
-////            return dream
-////        }
+
+//
+//    func getDream(dreamId: NSManagedObjectID) -> [Dream]{
+//
+//        let fetchRequest: NSFetchRequest<Dream> = Dream.fetchRequest()
 //
 //        do {
-//            guard let dream =  try context.existingObject(with: dreamId) as? Dream else {
-////                return dream
-//            }
-//            try dream
+//            return try persistentContainer.viewContext.fetch(fetchRequest)
 //        } catch {
-//            print(error)
+//            return []
 //        }
-//        return dream
 //    }
     
 }

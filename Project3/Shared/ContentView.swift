@@ -36,14 +36,14 @@ struct ContentView: View {
         }
     }
     
-    private func getDream(at offsets: IndexSet) {
-        offsets.forEach {
-            index in
-            let dream = dreamListVM.dreams[index]
-            dreamListVM.getDream(dreamId: dream.id)
-        }
-    }
-    
+//    private func getDream(at offsets: IndexSet) {
+//        offsets.forEach {
+//            index in
+//            let dream = dreamListVM.dreams[index]
+//            dreamListVM.getDream(dreamId: dream.id)
+//        }
+//    }
+//
     
     
     
@@ -74,7 +74,7 @@ struct ContentView: View {
                             dream in
             
                             //navigate to EntryDetail screen and pass the view context, current dream title and entry. The current dream title and entry will be displayed in EntryDetail
-                            NavigationLink(destination: EntryDetail(vm: DreamListViewModel(context: viewContext), selectedDream: dream)){
+                            NavigationLink(destination: EntryDetail(vm: DreamListViewModel(context: viewContext))){
                             Text(dream.title).foregroundColor(.white)
                                 .font(.title)
                             }

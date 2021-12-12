@@ -12,7 +12,7 @@ protocol BaseModel {
     static var viewContext: NSManagedObjectContext {get}
     func save() throws
     func delete() throws
-    func get() throws
+//    func get() throws
 }
 
 extension BaseModel where Self: NSManagedObject{
