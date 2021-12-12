@@ -13,7 +13,7 @@ import SwiftUI
 struct CurrenTaberAvivZohmanProject3: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(coreDM: CoreDataManager())
         }
     }
 }
