@@ -8,6 +8,11 @@
 import Foundation
 import CoreData
 
+// This does NOT use the MVVM Model
+// Bad practice to not use it, but it makes the code easier to understand for us
+
+// Core Data is directly accessible from our AddNewEntry View
+
 class CoreDataManager {
     
     let persistentContainer: NSPersistentContainer
@@ -56,11 +61,13 @@ class CoreDataManager {
         
     }
     
-    func saveDream(title: String, entry: String) {
+    func saveDream(title: String, entry: String, canvas: Data, date: Date) {
         
         let dream = Dream(context: persistentContainer.viewContext)
         dream.title = title
         dream.entry = entry
+        dream.canvas = canvas
+        dream.date = date
         
         do {
             try persistentContainer.viewContext.save()

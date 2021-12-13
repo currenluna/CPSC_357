@@ -6,20 +6,25 @@
 //
 
 import SwiftUI
+import PencilKit
 import Foundation
 
 //  Add Item View
 struct AddNewEntry: View {
-    //  Initializes journalStore with an argument from ContentView
-//    @StateObject var journalStore: JournalStore
-//    //  Uses State variables to store user input
-//    @State private var isAllergyFriendly = false
-//    @State private var name: String = ""
-//    @State private var description: String = ""
     
+    // Canvas View
+    @State private var canvasView = PKCanvasView()
+    
+    // Core Data Variables for Dreams
+//private let dreamID: UUID = UUID()
     @State private var dreamTitle: String = ""
     @State private var dreamEntry: String = ""
+    @State private var dreamCanvas: Data = Data()
+    private let dreamDate: Date = Date()
+    
+    // Core Data Manager
     let coreDM: CoreDataManager
+    
 //    @Binding var needsRefresh: Bool
     
     @State private var dreams: [Dream] = [Dream]()
@@ -42,46 +47,14 @@ struct AddNewEntry: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button("Save") {
                     if !dreamTitle.isEmpty {
-                        coreDM.saveDream(title: dreamTitle, entry: dreamEntry)
+                        coreDM.saveDream(title: dreamTitle, entry: dreamEntry, canvas: dreamCanvas, date: dreamDate)
                         populateDreams()
     //                    needsRefresh.toggle()
                     }
                 }
-                
-                
-//                DataInput(title: "Title", userInput: $dreamTitle)
-//                DataInput(title: "Entry", userInput: $dreamEntry)
-//
-//                Button("Save") {
-//                    if !dreamTitle.isEmpty {
-//                        coreDM.saveDream(title: dreamTitle, entry: dreamEntry)
-//                        populateDreams()
-//    //                    needsRefresh.toggle()
-//                    }
-//                }
-                
-//                Toggle(isOn: $isAllergyFriendly) {
-//                    Text("Allergy Friendly?").font(.headline)
-//                }.padding()
             }
-            
-            //  Calls addNewRestaurant function
-//            Button("Save") {
-//                if !dreamTitle.isEmpty {
-//                    coreDM.saveDream(title: dreamTitle, entry: dreamEntry)
-//                    populateDreams()
-////                    needsRefresh.toggle()
-//                }
-//            }
         }
     }
-    
-    //  Function called when "Add Restaurant" Button is pressed
-//    func addNewEntry() {
-//        let newEntry = Entry(id: UUID().uuidString, name: name, description: description, isAllergyFriendly: isAllergyFriendly, imageName: "No_Image")
-//        
-//        journalStore.entries.append(newEntry)
-//    }
 }
 
 //  Preview Structure

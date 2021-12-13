@@ -10,23 +10,21 @@ import SwiftUI
 //  Main List View
 struct ContentView: View {
     
+    // Variables for Core Data
     
+    // Not best practice to use State variables to populate Core Data
+    // State variables should just be used for controlling the UI
     let coreDM: CoreDataManager
     @State private var dreamTitle: String = ""
     @State private var dreamEntry: String = ""
-    // NOT A GOOD IDEA TO USE STATE TO POPULATE DATA FROM
-    // THIRD PARTY CALL
-    @State private var dreams: [Dream] = [Dream]()
     @State private var needsRefresh: Bool = false
     @State private var isPresented: Bool = false
+
+    @State private var dreams: [Dream] = [Dream]()
     private func populateDreams() {
         dreams = coreDM.getAllDreams()
     }
     
-    
-    
-    //  Initializes journalStore to restaurantData
-//    @StateObject private var journalStore: JournalStore = JournalStore(entries: journalData)
     //  Body
     //  Its NavigationView contains NavigationLink (see ListCell)
     var body: some View {
@@ -44,17 +42,8 @@ struct ContentView: View {
                         .padding(.leading, 20)
                     // List of Journal Entries
                     List {
-                        //  Creates a row for each Entry in journalStore
-                        
+                        //  Creates a row for each Entry in Core Data
                         ForEach(dreams, id: \.self) { dream in
-                            
-//                            NavigationLink(
-//                                destination: EntryDetail(dream: dream, coreDM: coreDM),
-//                                label: {
-//                                    Text(dream.title ?? "")
-//                                })
-                            
-                            
                             ListCell(dream:dream, coreDM: coreDM)
                         }.onDelete(perform: { indexSet in
                             indexSet.forEach { index in
@@ -67,24 +56,12 @@ struct ContentView: View {
                         .listRowBackground(Color.purple_dark)
                         .listRowSeparator(.hidden)
                         .listRowSeparatorTint(Color.blue_light)
-                        .listItemTint(.red)
-                        
-                            //CURREN CODE
-//                        ForEach(journalStore.entries) { entry in
-//                            ListCell(entry: entry)
-//                        }
-//                                .onDelete(perform: deleteItems)
-//        //                        .onMove(perform: moveItems) - No need to move, but here for reference
-//                                .listRowBackground(Color.purple_dark)
-//                                .listRowSeparator(.hidden)
-//                                .listRowSeparatorTint(Color.blue_light)
-//                                .listItemTint(.red)
                     }
                     .listStyle(.plain)
                     //  Buttons for adding new list items and editing the list
                     .navigationBarItems(leading: NavigationLink(
                         destination: AddNewEntry(coreDM: coreDM)) {
-                        Image(systemName: "gearshape.fill")
+                        Image(systemName: "questionmark.circle.fill")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }, trailing: EditButton().font(Font.butn))
@@ -112,21 +89,6 @@ struct ContentView: View {
         }
         .accentColor(Color.blue_dark)
     }
-    
-    
-//    func addButton() {
-//        
-//    }
-//    
-//    //  Enables user to delete list items
-//    func deleteItems(at offsets: IndexSet) {
-//        journalStore.entries.remove(atOffsets: offsets)
-//    }
-//    
-//    //  Enables user to move list items
-//    func moveItems(from source: IndexSet, to destination: Int) {
-//        journalStore.entries.move(fromOffsets: source, toOffset: destination)
-//    }
 }
 
 //  Preview Structure
