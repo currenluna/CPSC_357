@@ -17,8 +17,7 @@ struct ContentView: View {
     let coreDM: CoreDataManager
     @State private var dreamTitle: String = ""
     @State private var dreamEntry: String = ""
-    @State private var needsRefresh: Bool = false
-    @State private var isPresented: Bool = false
+    @State private var isShowingSheet = false
 
     @State private var dreams: [Dream] = [Dream]()
     private func populateDreams() {
@@ -59,8 +58,9 @@ struct ContentView: View {
                     }
                     .listStyle(.plain)
                     //  Buttons for adding new list items and editing the list
-                    .navigationBarItems(leading: NavigationLink(
-                        destination: AddNewEntry(coreDM: coreDM)) {
+                    .navigationBarItems(leading: Button(action: {
+                        isShowingSheet.toggle()
+                    }) {
                         Image(systemName: "questionmark.circle.fill")
                             .resizable()
                             .frame(width: 30, height: 30)
@@ -86,6 +86,25 @@ struct ContentView: View {
             .onAppear(perform: {
                 populateDreams()
             })
+            .sheet(isPresented: $isShowingSheet) {
+                ZStack {
+                    // Background Color
+                    Color.purple_light.edgesIgnoringSafeArea(.all)
+                    
+                    VStack(alignment: .leading) {
+                        Button(action: {
+                            isShowingSheet.toggle()
+                        }) {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30, height: 30)
+                                .padding(20)
+                        }
+                        HelpView()
+                    }
+                }
+            }
         }
         .accentColor(Color.blue_dark)
     }
@@ -109,7 +128,7 @@ struct ListCell: View {
         // A ZStack with a custom view on top of an empty NavigationLink
         ZStack {
             // Add an empty view to allow for a custom list row arrow
-            NavigationLink(destination: EntryDetail(dream: dream, coreDM: coreDM)) {
+            NavigationLink(destination: EntryDetail(dream: dream)) {
                 EmptyView()
             }
 

@@ -54,7 +54,7 @@ class CoreDataManager {
         let fetchRequest: NSFetchRequest<Dream> = Dream.fetchRequest()
         
         do {
-            return try persistentContainer.viewContext.fetch(fetchRequest)
+            return try persistentContainer.viewContext.fetch(fetchRequest).reversed()
         } catch {
             return []
         }
@@ -74,7 +74,5 @@ class CoreDataManager {
         } catch {
             print("Failed to save dream \(error)")
         }
-        
     }
-    
 }
