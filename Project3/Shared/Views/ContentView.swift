@@ -10,23 +10,20 @@ import SwiftUI
 //  Main List View
 struct ContentView: View {
     
+    // Variables for Core Data
     
+    // Not best practice to use State variables to populate Core Data
+    // State variables should just be used for controlling the UI
     let coreDM: CoreDataManager
     @State private var dreamTitle: String = ""
     @State private var dreamEntry: String = ""
-    // NOT A GOOD IDEA TO USE STATE TO POPULATE DATA FROM
-    // THIRD PARTY CALL
+    @State private var isShowingSheet = false
+
     @State private var dreams: [Dream] = [Dream]()
-    @State private var needsRefresh: Bool = false
-    @State private var isPresented: Bool = false
     private func populateDreams() {
         dreams = coreDM.getAllDreams()
     }
     
-    
-    
-    //  Initializes journalStore to restaurantData
-//    @StateObject private var journalStore: JournalStore = JournalStore(entries: journalData)
     //  Body
     //  Its NavigationView contains NavigationLink (see ListCell)
     var body: some View {
@@ -44,17 +41,8 @@ struct ContentView: View {
                         .padding(.leading, 20)
                     // List of Journal Entries
                     List {
-                        //  Creates a row for each Entry in journalStore
-                        
+                        //  Creates a row for each Entry in Core Data
                         ForEach(dreams, id: \.self) { dream in
-                            
-//                            NavigationLink(
-//                                destination: EntryDetail(dream: dream, coreDM: coreDM),
-//                                label: {
-//                                    Text(dream.title ?? "")
-//                                })
-                            
-                            
                             ListCell(dream:dream, coreDM: coreDM)
                         }.onDelete(perform: { indexSet in
                             indexSet.forEach { index in
@@ -67,24 +55,13 @@ struct ContentView: View {
                         .listRowBackground(Color.purple_dark)
                         .listRowSeparator(.hidden)
                         .listRowSeparatorTint(Color.blue_light)
-                        .listItemTint(.red)
-                        
-                            //CURREN CODE
-//                        ForEach(journalStore.entries) { entry in
-//                            ListCell(entry: entry)
-//                        }
-//                                .onDelete(perform: deleteItems)
-//        //                        .onMove(perform: moveItems) - No need to move, but here for reference
-//                                .listRowBackground(Color.purple_dark)
-//                                .listRowSeparator(.hidden)
-//                                .listRowSeparatorTint(Color.blue_light)
-//                                .listItemTint(.red)
                     }
                     .listStyle(.plain)
                     //  Buttons for adding new list items and editing the list
-                    .navigationBarItems(leading: NavigationLink(
-                        destination: AddNewEntry(coreDM: coreDM)) {
-                        Image(systemName: "gearshape.fill")
+                    .navigationBarItems(leading: Button(action: {
+                        isShowingSheet.toggle()
+                    }) {
+                        Image(systemName: "questionmark.circle.fill")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }, trailing: EditButton().font(Font.butn))
@@ -109,24 +86,29 @@ struct ContentView: View {
             .onAppear(perform: {
                 populateDreams()
             })
+            .sheet(isPresented: $isShowingSheet) {
+                ZStack {
+                    // Background Color
+                    Color.purple_light.edgesIgnoringSafeArea(.all)
+                    
+                    VStack(alignment: .leading) {
+                        Button(action: {
+                            isShowingSheet.toggle()
+                        }) {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(.blue_dark)
+                                .padding(20)
+                        }
+                        HelpView()
+                    }
+                }
+            }
         }
         .accentColor(Color.blue_dark)
     }
-    
-    
-//    func addButton() {
-//        
-//    }
-//    
-//    //  Enables user to delete list items
-//    func deleteItems(at offsets: IndexSet) {
-//        journalStore.entries.remove(atOffsets: offsets)
-//    }
-//    
-//    //  Enables user to move list items
-//    func moveItems(from source: IndexSet, to destination: Int) {
-//        journalStore.entries.move(fromOffsets: source, toOffset: destination)
-//    }
 }
 
 //  Preview Structure
@@ -142,22 +124,29 @@ struct ListCell: View {
     var dream: Dream
     let coreDM: CoreDataManager
     
+    @State private var dateDefault = Date()
+    
+    private func getStringDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        return dateFormatter.string(from: dream.date ?? dateDefault)
+    }
 
     var body: some View {
         // A ZStack with a custom view on top of an empty NavigationLink
         ZStack {
             // Add an empty view to allow for a custom list row arrow
-            NavigationLink(destination: EntryDetail(dream: dream, coreDM: coreDM)) {
+            NavigationLink(destination: EntryDetail(dream: dream)) {
                 EmptyView()
             }
 
             VStack {
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
+                        Text(getStringDate(date: dream.date ?? dateDefault))
+                            .font(Font.bod)
                         Text(dream.title ?? "")
                             .font(Font.h2)
-//                        Text(entry.name)
-//                            .font(Font.h2)
                     }
                     Spacer()
                     Image(systemName: "chevron.right") // Allows for custom color
