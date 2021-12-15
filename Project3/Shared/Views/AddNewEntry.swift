@@ -152,12 +152,56 @@ struct DataInput: View {
                 .font(.h2)
                 .foregroundColor(.purple_dark)
                 .padding(.leading, 30)
-            TextField("Enter \(title)", text: $userInput)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .cornerRadius(20)
-                .padding(.leading, 20)
-                .padding(.trailing, 20)
+            ZStack {
+                // Background Color
+                Color.blue_light.edgesIgnoringSafeArea(.all)
+                TextField("", text: $userInput)
+                    .placeholder(when: userInput.isEmpty) {
+                        Text("Enter \(title)...")
+                            .foregroundColor(.purple_light)
+                    }
+                    .customTextField(color: .black, padding: 20, lineWidth: 0)
+                    .foregroundColor(.purple_dark)
+            }
+            .cornerRadius(20)
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
+
         }
         .padding(.bottom, 10)
+    }
+}
+
+
+struct TextFieldModifier: ViewModifier {
+    let color: Color
+    let padding: CGFloat // <- space between text and border
+    let lineWidth: CGFloat
+
+    func body(content: Content) -> some View {
+        content
+            .padding(padding)
+            .overlay(RoundedRectangle(cornerRadius: padding)
+                        .stroke(color, lineWidth: lineWidth)
+            )
+    }
+}
+
+extension View {
+    func customTextField(color: Color = .secondary, padding: CGFloat = 3, lineWidth: CGFloat = 1.0) -> some View { // <- Default settings
+        self.modifier(TextFieldModifier(color: color, padding: padding, lineWidth: lineWidth))
+    }
+}
+
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+
+        ZStack(alignment: alignment) {
+            placeholder().opacity(shouldShow ? 1 : 0)
+            self
+        }
     }
 }

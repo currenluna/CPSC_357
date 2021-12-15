@@ -17,5 +17,3 @@ struct CurrenTaberAvivZohmanProject3: App {
         }
     }
 }
-
-//Aviv Zohman Change

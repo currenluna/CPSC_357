@@ -99,6 +99,7 @@ struct ContentView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 30, height: 30)
+                                .foregroundColor(.blue_dark)
                                 .padding(20)
                         }
                         HelpView()
@@ -123,6 +124,13 @@ struct ListCell: View {
     var dream: Dream
     let coreDM: CoreDataManager
     
+    @State private var dateDefault = Date()
+    
+    private func getStringDate(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        return dateFormatter.string(from: dream.date ?? dateDefault)
+    }
 
     var body: some View {
         // A ZStack with a custom view on top of an empty NavigationLink
@@ -135,10 +143,10 @@ struct ListCell: View {
             VStack {
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
+                        Text(getStringDate(date: dream.date ?? dateDefault))
+                            .font(Font.bod)
                         Text(dream.title ?? "")
                             .font(Font.h2)
-//                        Text(entry.name)
-//                            .font(Font.h2)
                     }
                     Spacer()
                     Image(systemName: "chevron.right") // Allows for custom color
