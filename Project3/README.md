@@ -1,12 +1,12 @@
-# Project #2
-- **Name:** Curren Taber
+# Project #3
+- **Name:** Curren Taber & Aviv Zohman
 - **Professor:** Dr. Cibrian
 - **Class:** CPSC 357-01
-- **Date:** 28 October 2021
+- **Date:** 17 December 2021
 
 ## App Instructions
 
-1. Open `Curren_Taber_Project2.xcodeproj` in XCode
+1. Open `Curren_Taber_and_Aviv_Zohman_Project3.xcodeproj` in XCode
 2. Run the application using an iPhone 12 Pro Max Simulator
 
 ## Video Demo
