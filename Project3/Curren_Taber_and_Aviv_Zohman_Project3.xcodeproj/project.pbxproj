@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		174F5CE52766AB1B00C6F12E /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CanvasView.swift; path = ../../../../../../../../Desktop/PencilKit/CanvasView.swift; sourceTree = "<group>"; };
+		174F5CE52766AB1B00C6F12E /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		179E71D4272201200061BED4 /* CurrenTaberAvivZohmanProject3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenTaberAvivZohmanProject3App.swift; sourceTree = "<group>"; };
 		179E71D5272201200061BED4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		179E71D6272201220061BED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
