@@ -10,8 +10,7 @@ import CoreData
 
 // This does NOT use the MVVM Model
 // Bad practice to not use it, but it makes the code easier to understand for us
-
-// Core Data is directly accessible from our AddNewEntry View
+// Core Data is directly accessible from our Views
 
 class CoreDataManager {
     

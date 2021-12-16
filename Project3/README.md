@@ -4,16 +4,18 @@
 - **Class:** CPSC 357-01
 - **Date:** 28 October 2021
 
-## Instructions
-
-```
-cd folder
-pod install
-```
+## App Instructions
 
 1. Open `Curren_Taber_Project2.xcodeproj` in XCode
 2. Run the application using an iPhone 12 Pro Max Simulator
 
+## Video Demo
+
+
+
+## Presentation
+
+[Link](https://docs.google.com/presentation/d/1nZjy3RNTZGHBzYlDBe2UyJ7vH5KXuF15jzubK6irTGA/edit?usp=sharing)
 
 ## Sources
 - [Core Data with SwiftUI](https://youtu.be/_ui7pxU1rNI)

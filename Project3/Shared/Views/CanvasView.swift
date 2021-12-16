@@ -8,6 +8,7 @@
 import SwiftUI
 import PencilKit
 
+// A canvas for PencilKit
 struct CanvasView: View {
   @Binding var canvasView: PKCanvasView
   let onSaved: () -> Void
