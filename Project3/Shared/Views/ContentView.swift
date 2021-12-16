@@ -11,15 +11,15 @@ import SwiftUI
 struct ContentView: View {
     
     // Variables for Core Data
-    
-    // Not best practice to use State variables to populate Core Data
-    // State variables should just be used for controlling the UI
+    //      Not best practice to use State variables to populate Core Data
+    //      State variables should just be used for controlling the UI
     let coreDM: CoreDataManager
     @State private var dreamTitle: String = ""
     @State private var dreamEntry: String = ""
     @State private var isShowingSheet = false
-
     @State private var dreams: [Dream] = [Dream]()
+    
+    // Populates the array of Dream objects
     private func populateDreams() {
         dreams = coreDM.getAllDreams()
     }
@@ -67,7 +67,9 @@ struct ContentView: View {
                     }, trailing: EditButton().font(Font.butn))
                 }
                 
-                NavigationLink(destination: AddNewEntry(coreDM: coreDM)) {
+                // Add new dream button
+                // Fixed to bottom-right
+                NavigationLink(destination: AddNewEntryView(coreDM: coreDM)) {
                     ZStack {
                         Circle()
                             .frame(width: 111, height: 111)
@@ -86,6 +88,7 @@ struct ContentView: View {
             .onAppear(perform: {
                 populateDreams()
             })
+            // Tutorial Sheet toggled by '?' button
             .sheet(isPresented: $isShowingSheet) {
                 ZStack {
                     // Background Color
@@ -118,7 +121,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-//  Subview used within ContentView
+//  Subview for list rows, used within ContentView
 //  Makes the code more organized
 struct ListCell: View {
     var dream: Dream
@@ -136,10 +139,12 @@ struct ListCell: View {
         // A ZStack with a custom view on top of an empty NavigationLink
         ZStack {
             // Add an empty view to allow for a custom list row arrow
-            NavigationLink(destination: EntryDetail(dream: dream)) {
+            NavigationLink(destination: EntryDetailView(dream: dream)) {
                 EmptyView()
             }
-
+            
+            // Custom list row
+            // Necessary for customizing arrow color
             VStack {
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
@@ -149,7 +154,7 @@ struct ListCell: View {
                             .font(Font.h2)
                     }
                     Spacer()
-                    Image(systemName: "chevron.right") // Allows for custom color
+                    Image(systemName: "chevron.right") // Custom color
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, alignment: .trailing)

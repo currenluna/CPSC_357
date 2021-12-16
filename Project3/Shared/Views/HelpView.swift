@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+// Shown on the ContentView sheet
 struct HelpView: View {
     var body: some View {
         ScrollView {
@@ -33,6 +33,7 @@ struct HelpView: View {
     }
 }
 
+// Preview Structure
 struct HelpView_Previews: PreviewProvider {
     static var previews: some View {
         HelpView()
